@@ -56,25 +56,25 @@ const ThirdTask = () => {
                         </div>
                     </div>
                 </div>
-                <div className="bg-red-50 rounded-[32px]">
+                <div className="bg-red-50 rounded-[32px] group">
                     <div className="flex flex-col gap-[24px]  p-[26px]">
                         <div className="w-[218px] h-[138px] flex flex-col gap-[12px] text-[#C33241] -rotate-90 mt-10">
                             <p className="text-[32px] font-bold">Upcoming Courses </p>
                             <p className="text-[18px]">exciting new courses waiting to boost your skills.</p>
                         </div>
                         <div className="text-[#C33241] text-[150px] font-bold">
-                            05<sup>+</sup>
+                            05<sup className='inline-block transition-transform duration-400 group-hover:translate-y-2'>+</sup>
                         </div>
                     </div>
                 </div>
-                <div className="bg-red-50 rounded-[32px]">
+                <div className="bg-red-50 rounded-[32px] group ">
                     <div className="flex flex-col gap-[24px]  p-[26px]">
                         <div className="w-[218px] h-[138px] flex flex-col gap-[12px] text-[#C33241] -rotate-90 mt-10">
                             <p className="text-[32px] font-bold">Ongoing Courses </p>
                              <p className="text-[18px]">currently happening - don't miss out on the action!.</p>
                         </div>
                         <div className="text-[#C33241] text-[150px] font-bold">
-                            05<sup>+</sup>
+                            10<sup className='inline-block transition-transform duration-400 group-hover:translate-y-2'>+</sup>
                         </div>
                     </div>
                 </div>

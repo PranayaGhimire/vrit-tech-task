@@ -1,9 +1,11 @@
+'use client'
 import Image from 'next/image'
 import React from 'react'
 import firstPerson from "../assets/firstPerson.svg";
 import secondPerson from "../assets/secondPerson.svg";
 import thirdPerson from "../assets/thirdPerson.svg";
 import fourthPerson from "../assets/fourthPerson.svg";
+import { motion } from 'framer-motion';
 const SecondTask = () => {
   return (
     <div className='p-24'>
@@ -18,7 +20,12 @@ const SecondTask = () => {
                 {/* First */}
                 <div className='flex flex-col justify-center items-end-safe w-[592px] h-[341px] bg-[#F45B5B] rounded-[30px] text-white p-[20px]'>
                     <div className='flex  relative'>
-                        <Image src={firstPerson} alt='' className='absolute right-82 -top-15'/>
+                        <motion.div
+                           
+                            >
+                             <Image src={firstPerson} alt='' className='absolute right-82 -top-15 animate-bounce'/>
+                        </motion.div>
+                       
                         <div className='w-[351px] h-[225px] flex flex-col gap-[32px]'>
                             <div className='flex flex-col items-center gap-[10px]'>
                                 <p className='text-[32px] font-bold'>Start with Clarity</p>
@@ -31,7 +38,7 @@ const SecondTask = () => {
                 {/* Second */}
                <div className='flex flex-col justify-center  w-[592px] h-[341px] bg-[#5492A0] rounded-[30px] text-white p-[20px]'>
                     <div className='flex   relative'>
-                        <Image src={secondPerson} alt='' className='absolute left-[330px] -top-[55px]'/>
+                        <Image src={secondPerson} alt='' className='absolute left-[330px] -top-[55px] animate-bounce'/>
                         <div className='w-[351px] h-[225px] flex flex-col gap-[32px]'>
                             <div className='flex flex-col  gap-[10px]'>
                                 <p className='text-[32px] font-bold'>Learn by Doing</p>
@@ -46,7 +53,7 @@ const SecondTask = () => {
                 {/* Third */}
                  <div className='flex flex-col justify-center items-end-safe  w-[592px] h-[341px] bg-[#6C64A8] rounded-[30px] text-white p-[20px]'>
                     <div className='flex   relative'>
-                        <Image src={thirdPerson} alt='' className='absolute right-82 top-15'/>
+                        <Image src={thirdPerson} alt='' className='absolute right-82 top-15 animate-bounce'/>
                         <div className='w-[351px] h-[225px] flex flex-col gap-[32px]'>
                             <div className='flex flex-col  gap-[10px]'>
                                 <p className=' text-[32px] font-bold'>Get Mentored & Supported</p>
@@ -61,7 +68,7 @@ const SecondTask = () => {
                 {/* Fourth */}
                  <div className='flex flex-col justify-center  w-[592px] h-[341px] bg-[#A88964] rounded-[30px] text-white p-[20px]'>
                     <div className='flex   relative'>
-                        <Image src={fourthPerson} alt='' className='absolute left-[270px] top-7 '/>
+                        <Image src={fourthPerson} alt='' className='absolute left-[270px] top-7 animate-bounce'/>
                         <div className=' h-[225px] flex flex-col gap-[32px]'>
                             <div className=' flex flex-col  gap-[10px]'>
                                 <p className='text-[32px] font-bold'>Achieve & Showcase</p>
